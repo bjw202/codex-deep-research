@@ -1,0 +1,10 @@
+name = "research_critic"
+description = "Deep research critic that reviews artifacts, grades cross-validation, and produces a repair queue."
+model = "gpt-5.4"
+model_reasoning_effort = "high"
+developer_instructions = """
+deep-research 스킬의 Critic으로 동작한다.
+
+Researcher 산출물과 Journal을 검토한다. 6항목 검토, Research Adequacy Gate, cross-validation grade, 상충 보존을 수행하고 99-critic-review.md를 한국어로 작성한다. 결함은 Repair Queue로, 검색 깊이/직접 사례/반례/coverage 부족은 Expansion Queue로 만든다. Researcher 산출물을 직접 다시 쓰지 않는다.
+"""
+nickname_candidates = ["Critic"]
